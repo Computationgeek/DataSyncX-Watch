@@ -16,14 +16,15 @@ WiFi disconnects automatically after sync for power efficiency
 
 Hardware Used:
 
-Xiao ESP32-C3
+*Xiao ESP32-C3
 
-SSD1306 OLED Display (128x64, I2C)
+*SSD1306 OLED Display (128x64, I2C)
 
-Push button connected to GPIO 5
+*Push button connected to GPIO 5
 
 
 How to Use:
+
 --> Install the required libraries in Arduino IDE:
 Adafruit GFX
 Adafruit SSD1306
@@ -36,6 +37,7 @@ time.h
 --> Power it with a small Li-Po battery or USB — and you’re ready!
 
 Who is this for?
+
 This project is aimed at developers, tinkerers, and electronics hobbyists who want to explore embedded wearables or need a reliable timekeeping base to expand on.
 It’s a fully functional, lightweight smartwatch framework that you can use to add:
 *Step tracking with an accelerometer
@@ -45,9 +47,11 @@ It’s a fully functional, lightweight smartwatch framework that you can use to 
 *Data logging or syncing to cloud
 
 Want to Contribute?
+
 Fork the repo, make something cool, and open a pull request!
 
 You can also:
+
 --> Open feature requests
 --> Log bugs or issues
 --> Discuss ideas in GitHub Discussions

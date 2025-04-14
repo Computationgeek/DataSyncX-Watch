@@ -1,3 +1,14 @@
+/*
+  DataSyncX-Watch - Minimal Smartwatch Framework
+  Developed by: Aamir Ayaaz
+  Initial Upload Date: April 15, 2025
+  GitHub: https://github.com/Computationgeek/DataSyncX-Watch
+  License: MIT
+
+  Description: A low-power smartwatch base using Seeed Studio Xiao ESP32-C3 and SSD1306 OLED,
+  featuring NTP time sync, auto screen-off, and extensibility for more features.
+*/
+
 #include <WiFi.h>
 #include <time.h>
 #include <Adafruit_GFX.h>
@@ -8,8 +19,8 @@
 #define OLED_RESET     -1
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
-const char* ssid       = "";
-const char* password   = "";
+const char* ssid       = "YOUR_SSID";
+const char* password   = "YOUR_PASSWORD";
 
 const char* ntpServer = "pool.ntp.org";
 const long  gmtOffset_sec = 19800;  // India Time GMT+5:30 = 5.5*3600 = 19800
@@ -19,7 +30,7 @@ const int buttonPin = 5; // D3 on Xiao ESP32-C3
 bool screenOn = false;
 unsigned long screenOnTime = 0;
 unsigned long lastNTPSync = 0;
-const unsigned long NTP_SYNC_INTERVAL = 5 * 60 * 60 * 1000; // 5 hours in milliseconds
+const unsigned long NTP_SYNC_INTERVAL = 5 * 60 * 60 * 1000; // 5 hours in milliseconds or Syncs with NTP setver to fetch time every 5 hours 
 
 void syncNTPTime() {
   // Connect to WiFi if not already connected

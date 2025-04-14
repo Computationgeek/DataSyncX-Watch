@@ -32,18 +32,26 @@ WiFi
 time.h
 
 --> Clone the repository to your computer.
+
 --> Open the main .ino file in Arduino IDE.
+
 --> Connect your ESP32-C3 board and upload the code.
+
 --> Power it with a small Li-Po battery or USB — and you’re ready!
 
 Who is this for?
 
 This project is aimed at developers, tinkerers, and electronics hobbyists who want to explore embedded wearables or need a reliable timekeeping base to expand on.
 It’s a fully functional, lightweight smartwatch framework that you can use to add:
+
 *Step tracking with an accelerometer
+
 *BLE notifications
+
 *Alarms or reminders
+
 *Custom apps (via buttons, gestures, etc.)
+
 *Data logging or syncing to cloud
 
 Want to Contribute?
@@ -53,7 +61,9 @@ Fork the repo, make something cool, and open a pull request!
 You can also:
 
 --> Open feature requests
+
 --> Log bugs or issues
+
 --> Discuss ideas in GitHub Discussions
 
 Let’s grow this into a feature-rich, community-driven smartwatch dev base.
